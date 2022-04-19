@@ -1,0 +1,44 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _b45f8f6f58-20200629 OPENFOAM=2006
+Arch   : "LSB;label=32;scalar=64"
+Exec   : mapFields ../wingMotion2D_simpleFoam -sourceTime latestTime -consistent
+Date   : Dec 02 2020
+Time   : 20:15:31
+Host   : DESKTOP-9RF9SV6
+PID    : 1742
+I/O    : uncollated
+Case   : /mnt/e/wing/wingMotion2D_pimpleFoam
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Source: "/mnt/e/wing" "wingMotion2D_simpleFoam"
+Target: "/mnt/e/wing" "wingMotion2D_pimpleFoam"
+
+Create databases as time
+
+Source time: 3000
+Target time: 0
+Create meshes
+
+Source mesh size: 12556	Target mesh size: 12556
+
+
+Consistently creating and mapping fields for time 3000
+
+    interpolating p
+    interpolating nut
+    interpolating k
+    interpolating omega
+    interpolating U
+
+End
+
